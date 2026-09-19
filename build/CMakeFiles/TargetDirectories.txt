@@ -1,0 +1,6 @@
+C:/Users/valer/Desktop/Sen/libSCT/build/CMakeFiles/SCT.dir
+C:/Users/valer/Desktop/Sen/libSCT/build/CMakeFiles/edit_cache.dir
+C:/Users/valer/Desktop/Sen/libSCT/build/CMakeFiles/rebuild_cache.dir
+C:/Users/valer/Desktop/Sen/libSCT/build/external/Dobby/CMakeFiles/dobby.dir
+C:/Users/valer/Desktop/Sen/libSCT/build/external/Dobby/CMakeFiles/edit_cache.dir
+C:/Users/valer/Desktop/Sen/libSCT/build/external/Dobby/CMakeFiles/rebuild_cache.dir
