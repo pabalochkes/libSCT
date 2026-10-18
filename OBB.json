@@ -1,0 +1,217 @@
+		{
+			"objclass": "PassDamageArmorPropertySheet",
+			"aliases": [
+				"PassDamageArmor"
+			],
+			"objdata": {
+				"ArmorType": "PassDamage",
+				"BaseHealth": 999,
+				"ArmorFlags": [
+				"damageable",
+				"droppable",
+				"helm"
+				],
+				"PassDamageFlags": [
+					"RTID(CabbageDefault@ProjectileTypes)"
+				],
+				"ArmorLayers": [
+				"zombie_armor_cone_norm",
+				"zombie_armor_cone_damage_01",
+				"zombie_armor_cone_damage_02"
+				],
+				"ArmorLayerHealth": [
+				0.600000,
+				0.300000
+				],
+				"ImpactSoundEvent": "Play_impact_plastic"
+			}
+		},
+		{
+			"objclass": "PassDamageArmorPropertySheet",
+			"aliases": [
+				"DoorTest"
+			],
+			"objdata": {
+				"ClassName": "NewspaperArmor",
+				"ArmorType": "Newspaper",
+				"BaseHealth": 1100,
+				"ArmorFlags": [
+					"metallic",
+					"damageable",
+					"droppable"
+				],
+				"PassDamageFlags": [
+            		"RTID(CabbageDefault@ProjectileTypes)",
+					"RTID(MegaCabbageDefault@ProjectileTypes)",
+					"RTID(KernelDefault@ProjectileTypes)",
+					"RTID(ButterDefault@ProjectileTypes)",
+					"RTID(MelonDefault@ProjectileTypes)",
+					"RTID(MegaMelonDefault@ProjectileTypes)",
+					"RTID(WinterMelonDefault@ProjectileTypes)",
+					"RTID(WinterMegaMelonDefault@ProjectileTypes)",
+					"RTID(PepperpultDefault@ProjectileTypes)",
+					"RTID(PepperpultPlantfoodDefault@ProjectileTypes)",
+					"RTID(AkeeDefault@ProjectileTypes)",
+					"RTID(MegaAkeeDefault@ProjectileTypes)",
+					"RTID(SporeshroomDefault@ProjectileTypes)",
+					"RTID(MegaSporeshroomDefault@ProjectileTypes)",
+					"RTID(BloomingHeartsDefault@ProjectileTypes)",
+					"RTID(BloomingHeartsPlantfoodDefault@ProjectileTypes)",
+					"RTID(DusklobberDefault@ProjectileTypes)",
+					"RTID(AppleMortarDefault@ProjectileTypes)",
+					"RTID(AppleMortarPlantfoodDefault@ProjectileTypes)",
+					"RTID(SlingPeaDefault@ProjectileTypes)",
+					"RTID(SlingPeaPlantfoodDefault@ProjectileTypes)",
+					"RTID(BlastberrySecondaryProjectile@ProjectileTypes)"
+				],
+				"ArmorLayers": [
+					"zombie_armor_door_norm",
+					"zombie_armor_door_damage_01",
+					"zombie_armor_door_damage_02"
+				],
+				"ArmorLayerHealth": [
+					0.666000,
+					0.333000
+				],
+				"ImpactSoundEvent": "Play_impact_shieldhit",
+				"FireLayer": "",
+				"DropSoundEvent": ""
+			}
+		},
+		{
+            "objclass": "PlantType",
+            "aliases": [
+                "umbrella"
+            ],
+            "objdata": {
+                "TypeName": "umbrella",
+                "PlantFramework": "PlantUmbrella",
+                "PlantResourceGroups": [
+                    "PlantUmbrellaleaf",
+                    "ZombieLostCityJaneAudio"
+                ],
+                "PlantPreviewResourceGroups": [
+                    "PlantUmbrellaleaf"
+                ],
+                "Properties": "RTID(UmbrellaDefault@PlantProperties)",
+                "AnimRigClass": "PlantAnimRig_Umbrella",
+                "PopAnim": "POPANIM_PLANT_UMBRELLALEAF",
+                "HomeWorld": "egypt",
+                "AlmanacBackdropName": "egypt",
+                "Families": [
+                    "Reinforcemint"
+                ]
+            }
+        },
+		{
+            "objclass": "UmbrellaProps",
+            "aliases": [
+                "UmbrellaDefault"
+            ],
+            "objdata": {
+                "Cost": 100,
+                "BeghouledCost": 1000,
+                "Hitpoints": 300,
+                "PacketCooldown": 15.0,
+                "Height": "normal",
+                "PlantFoodPlayCount": 1,
+                "PlantGridType": "ground",
+                "ArtCenter": {
+                    "x": 99,
+                    "y": 110
+                },
+                "HitRectAdjust": {
+                    "mX": 0,
+                    "mY": 0,
+                    "mWidth": 0,
+                    "mHeight": 0
+                },
+                "Actions": [
+                    {
+                        "Type": "special",
+                        "TriggerType": "rect",
+                        "RectTriggerRange": {
+                            "mX": -69,
+                            "mY": -158,
+                            "mWidth": 203,
+                            "mHeight": 316 
+                        }
+                    },
+                    {
+                        "Type": "explode",
+                        "ExplodeType": "radius",
+                        "ExplodeRadius": 60.0736,
+                        "Burns": false,
+                        "Damage": 500,
+                        "TriggerType": "board",
+                        "CooldownTimeMin": 0,
+                        "CooldownTimeMax": 0,
+                        "ChillDuration": 0,
+                        "FreezeDuration": 0,
+                        "DieAfterExplode": false
+                    }
+                ],
+                "DamageMultiplier": 0.100000,
+                "StunPFDuration": 1.000000,
+                "KnockbackPFChance": 1.000000,
+				"KnockbackPFTime": 1.300000,
+				"KnockbackPFDistance": 200.000000,
+				"KnockbackPFHeight": 60.000000,
+                "BounceableProjectiles": [
+					"RTID(RomanTossedVase@ProjectileTypes)",
+					"RTID(ArrowDefault@ProjectileTypes)",
+					"RTID(SauceDefault@ProjectileTypes)"
+				],
+                "AudioEventName": "Play_Zomb_LostCity_Jane_Impact_Bounce",
+                "ProjectileBounceDistance": 160,
+				"ProjectileBounceHeight": 120,
+				"ProjectileBounceTime": 0.900000,
+                "PlantStats": [
+                    {
+                        "Type": "area",
+                        "Value": "3by3"
+                    },
+                    {
+                        "Type": "range",
+                        "Value": "touch"
+                    },
+                    {
+                        "Type": "armor",
+                        "Value": "armor0"
+                    },
+                    {
+                        "Type": "recharge",
+                        "Value": "recharge4"
+                    }
+                ],
+                "ScaledProps": [
+                    {
+                        "Key": "Hitpoints",
+                        "Formula": "flat",
+                        "Arg1": 3
+                    },
+                    {
+                        "Key": "MasteryBoostChance",
+                        "Formula": "boost_mastery",
+                        "Arg1": 10,
+                        "Arg2": 0.01,
+                        "comment": "arg2 every arg1 levels"
+                    }
+                ],
+                "ZenGardenSproutWeight": 25,
+                "ZenGardenBoostCost": 15,
+                "ZenGardenDurationOverrideSeconds": 27000,
+                "Boosts": [
+                    {
+                        "PlantBoostProps": "RTID(BoostFirstStrike@PropertySheets)",
+                        "Value": 1,
+                        "CooldownDurationSeconds": 28800
+                    }
+                ],
+                "SuggestionAlts": [
+                    "wallnut",
+                    "intensivecarrot",
+                    "iceburg"
+                ]
+            }
+        },

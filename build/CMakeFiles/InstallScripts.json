@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/valer/Desktop/Sen/libSCT/build/cmake_install.cmake",
+		"C:/Users/valer/Desktop/Sen/libSCT/build/external/Dobby/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
