@@ -33,10 +33,10 @@
 
 ### 2. Добавьте библиотеку
 
-Поместите `SCT.so` в каталог нативных библиотек APK:
+Поместите `libSCT.so` в каталог нативных библиотек APK:
 
 ```text
-lib/arm64-v8a/SCT.so
+lib/arm64-v8a/libSCT.so
 ```
 
 APK и целевая среда должны поддерживать архитектуру ARM64.
@@ -63,7 +63,7 @@ const-string v0, "SCT"
 invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 ```
 
-Это заставит Android загрузить `SCT.so` после `libPVZ2.so`.
+Это заставит Android загрузить `libSCT.so` после `libPVZ2.so`.
 
 ### 4. Пересоберите APK
 
@@ -80,7 +80,7 @@ invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
 Проект можно собрать в Windows или другой поддерживаемой среде с помощью CMake и Android NDK.
 
-Результат сборки: `SCT.so` для архитектуры `arm64-v8a` с целевой платформой Android API 26.
+Результат сборки: `libSCT.so` для архитектуры `arm64-v8a` с целевой платформой Android API 26.
 
 ### Компиляция
 
@@ -100,7 +100,7 @@ cmake -S . -B build -G Ninja \
 cmake --build build
 ```
 
-Выходная библиотека называется `SCT.so`. Её точное расположение зависит от конфигурации сборки.
+Выходная библиотека называется `libSCT.so`. Её точное расположение зависит от конфигурации сборки.
 
 ## Благодарности
 

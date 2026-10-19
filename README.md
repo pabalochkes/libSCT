@@ -33,10 +33,10 @@ Use an APK editing tool of your choice. For example, you can use [APKLab](https:
 
 ### 2. Add the library
 
-Place `SCT.so` in the APK's native library directory:
+Place `libSCT.so` in the APK's native library directory:
 
 ```text
-lib/arm64-v8a/SCT.so
+lib/arm64-v8a/libSCT.so
 ```
 
 The APK and target environment must support the ARM64 architecture.
@@ -63,7 +63,7 @@ const-string v0, "SCT"
 invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 ```
 
-This instructs Android to load `SCT.so` after `libPVZ2.so`.
+This instructs Android to load `libSCT.so` after `libPVZ2.so`.
 
 ### 4. Rebuild the APK
 
@@ -81,7 +81,7 @@ If the game fails to start, check the library's location, architecture, dependen
 
 The project can be built on Windows or another supported environment using CMake and the Android NDK.
 
-The resulting library is `SCT.so`, built for `arm64-v8a` and Android API 26.
+The resulting library is `libSCT.so`, built for `arm64-v8a` and Android API 26.
 
 ### Compile
 
@@ -101,7 +101,7 @@ Build the library:
 cmake --build build
 ```
 
-The output library is named `SCT.so`. Its exact location depends on the build configuration.
+The output library is named `libSCT.so`. Its exact location depends on the build configuration.
 
 ## Acknowledgements
 
