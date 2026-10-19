@@ -69,7 +69,17 @@ This instructs Android to load `libSCT.so` after `libPVZ2.so`.
 
 Rebuild and sign the APK using your preferred tool, then install it in a compatible environment.
 
-If the game fails to start, check the library's location, architecture, dependencies, and runtime logs.
+
+### 5. Additionally
+
+To ensure the functionality of the palm tree and the passdamage armor, you must also recreate their instances on the OBB side.
+
+You also need to add the corresponding texture and animation packs.
+
+Everything required for this is located in the OBB folder.
+
+## If the game does not start, check the library location, architecture, OBB, dependencies, and system logs.
+
 
 ## Building
 
