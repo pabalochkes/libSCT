@@ -72,7 +72,7 @@ Rebuild and sign the APK using your preferred tool, then install it in a compati
 
 ### 5. Additionally
 
-To ensure the functionality of the palm tree and the passdamage armor, you must also recreate their instances on the OBB side.
+To ensure the functionality of the umbrella leaf and the passdamage armor, you must also recreate their instances on the OBB side.
 
 You also need to add the corresponding texture and animation packs.
 
