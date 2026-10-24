@@ -10,7 +10,7 @@ namespace UmbrellaLeaf::Config
 
     // ==== leaf effect ============================================================================================
     constexpr const char* kLeafPopAnim = "POPANIM_PLANT_UMBRELLALEAF";
-    constexpr float       kLeafOffset[3] = { -2.0f, -13.0f, 0.0f };
+    constexpr float       kLeafOffset[3] = { -2.0f, -14.0f, 0.0f };
 
     // The game orders everything by one render number (0..499999). Each tile is 16000 apart
     constexpr int kRenderLayersPerTile = 16000;
