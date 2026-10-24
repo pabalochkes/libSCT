@@ -135,3 +135,70 @@
                 ]
             }
         },
+        {
+            "aliases": [
+                "umbrella"
+            ],
+            "objclass": "PlantLevelStats",
+            "objdata": {
+                "FloatStats": [
+                    {
+                        "Name": "Cost",
+                        "Values": [
+                            100
+                        ]
+                    },
+                    {
+                        "Name": "PacketCooldown",
+                        "Values": [
+                            15
+                        ]
+                    },
+                    {
+                        "Name": "StartingCooldown",
+                        "Values": [
+                            15
+                        ]
+                    },
+                    {
+						"Name": "ActionDamage",
+						"SubType": "0",
+						"Values": [
+							500
+						]
+					},
+                    {
+                        "Name": "Hitpoints",
+                        "Values": [
+                            300
+                        ]
+                    }
+                ],
+                "LevelCap": 1,
+                "LevelCoins": [
+                    0
+                ],
+                "LevelXP": [
+                    0
+                ],
+                "PlantTier": [
+                    0
+                ],
+                "StringStats": [
+                    {
+                        "Name": "Range",
+                        "Values": [
+                            ""
+                        ]
+                    },
+                    {
+                        "Name": "Area",
+                        "Values": [
+                            ""
+                        ]
+                    }
+                ],
+                "UsesLeveling": false,
+                "TypeName": "umbrella"
+            }
+        },
